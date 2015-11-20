@@ -19,7 +19,7 @@ include length of pregnancy in days (gestation), mother's age in years (age), mo
 Variable     | Estimate   
 -------------|----------- 
 (Intercept)  | -80.41
-gestation    | 0.41
+gestation    | 0.44
 parity       | -3.33
 age          | -0.01
 height       | 1.15
@@ -29,7 +29,7 @@ smoke        | -8.40
 
 \begin{multline}
     \widehat{babyWeight} = -80.41 + 0.44 * gestation -3.33 * parity -0.01  \\
-     + age + 1.15 * height + 0.05 + weight -8.40 * smoke \notag\\
+     * age + 1.15 * height + 0.05 * weight -8.40 * smoke \notag\\
 \end{multline}
 
 
@@ -53,10 +53,12 @@ obs       |bwt  | gestation  | parity | age | height | weight | smoke
 1         |120  | 284        | 0      | 27  | 62     | 100    | 0     
 
 
+\small{
 \begin{multline}
     \widehat{babyWeight} = -80.41 + 0.44 * gestation -3.33 * parity -0.01  \\
-     + age + 1.15 * height + 0.05 + weight -8.40 * smoke \notag\\
+     * age + 1.15 * height + 0.05 * weight -8.40 * smoke \notag\\
 \end{multline}
+}
 
 
 ##  
